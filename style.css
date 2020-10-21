@@ -17,14 +17,13 @@ body{
     top: 50%;
     transform: translate(-50%,-50%);
     border-radius: 10px;
-    background:linear-gradient(to left,rgb(61, 61, 238),rgb(60, 181, 221));
+    background:linear-gradient(to top left,rgb(0, 0, 255),rgb(0, 191, 255));
     overflow: hidden;
     box-shadow: 14px 17px 16px 16px rgba(0,0,0,0.75);
 }
 .header{
     border: 1px solid black;
     width: 50%;
-    position: relative;
     height: 70px;
     width: 100%;
     line-height: 70px;
@@ -35,11 +34,9 @@ body{
 .inputsquare{
     background: linear-gradient(to left,lightblue,rgb(31, 31, 250));
     width: 60%;
-    top: 10%;
-    left: -1%;
-    position: relative;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    margin-top: 4.5px;
+    margin-left: -1px;
+    float: left;
 }
 .cityname{
     font-size: 50px;
@@ -51,8 +48,6 @@ body{
     width: 55%;
     height: 60px;
     font-size: 45px;
-    left: -5%;
-    position: relative;
     border-bottom: 5px solid black;
     color: yellow;
 }
@@ -68,16 +63,23 @@ body{
     cursor: pointer;
     text-align: center;
     margin-top: 10px;
+    margin-left: 20px;
     border-radius: 10px;
     font-size: 50px;
     box-shadow: 5px 5px 7px 5px rgba(0,0,0,0.5);
     background: transparent;
+    transition: .2s linear;
 }
+
 .spaceimg{
-    float: right;
-    position: absolute;
-    left: 70%;
-    top: 130%;
-    height: 200px;
-    width: 200px;
+    width: 39.99%;
+    float: left;
+    background: linear-gradient(to left,rgb(31, 31, 250),lightblue);
+    margin-top: 4px;
+    padding-top: 17.8%;
+}
+.click:hover{
+    background-color: black;
+    color: white;
+    box-shadow: 7px 7px 9px 7px rgba(0,0,0,0.5);
 }
