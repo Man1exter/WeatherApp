@@ -26,6 +26,6 @@ body{
     height: 70px;
     width: 100%;
     line-height: 70px;
-    background: linear-gradient(to left,lightblue,blue);
+    background: linear-gradient(to left,lightblue,rgb(31, 31, 250));
     font-size: 35px;
 }
