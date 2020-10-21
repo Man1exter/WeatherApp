@@ -11,13 +11,15 @@ body{
     position: absolute;
     border: 2px solid blue;
     width: 50%;
-    height: 50%;
+    height: 70%;
     text-align: center;
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
-    border-radius: 5px;
+    border-radius: 10px;
     background:linear-gradient(to left,rgb(61, 61, 238),rgb(60, 181, 221));
+    overflow: hidden;
+    box-shadow: 14px 17px 16px 16px rgba(0,0,0,0.75);
 }
 .header{
     border: 1px solid black;
@@ -29,4 +31,11 @@ body{
     background: linear-gradient(to left,lightblue,rgb(31, 31, 250));
     font-size: 35px;
     border-bottom: 4px solid black;
+}
+.inputsquare{
+    background: linear-gradient(to left,lightblue,rgb(31, 31, 250));
+    width: 70%;
+    left: 15%;
+    top: 6%;
+    position: relative;
 }
