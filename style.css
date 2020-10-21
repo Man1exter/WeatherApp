@@ -7,3 +7,25 @@ body{
     height: 100vh;
     background: linear-gradient(to left,rgb(255, 81, 0),green);
 }
+.main{
+    position: absolute;
+    border: 2px solid blue;
+    width: 50%;
+    height: 50%;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 5px;
+    background:linear-gradient(to left,rgb(61, 61, 238),rgb(60, 181, 221));
+}
+.header{
+    border: 1px solid black;
+    width: 50%;
+    position: relative;
+    height: 70px;
+    width: 100%;
+    line-height: 70px;
+    background: linear-gradient(to left,lightblue,blue);
+    font-size: 35px;
+}
