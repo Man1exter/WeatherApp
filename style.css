@@ -42,7 +42,6 @@ body{
     border-bottom-right-radius: 10px;
 }
 .cityname{
-    border: 2px solid black;
     font-size: 50px;
     color: rgb(238, 255, 0);
 }
@@ -50,12 +49,27 @@ body{
     border: none;
     background: transparent;
     width: 55%;
-    height: 50px;
+    height: 60px;
     font-size: 45px;
-    left: -15%;
+    left: -5%;
     position: relative;
     border-bottom: 5px solid black;
+    color: yellow;
 }
 .input::placeholder{
     color: white;
+}
+.warning{
+    color: red;
+}
+.click{
+    width: 150px;
+    height: 90px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 10px;
+    font-size: 50px;
+    box-shadow: 5px 5px 7px 5px rgba(0,0,0,0.5);
+    background: transparent;
 }
