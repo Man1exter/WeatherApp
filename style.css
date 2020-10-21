@@ -28,4 +28,5 @@ body{
     line-height: 70px;
     background: linear-gradient(to left,lightblue,rgb(31, 31, 250));
     font-size: 35px;
+    border-bottom: 4px solid black;
 }
