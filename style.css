@@ -35,7 +35,7 @@ body{
 .inputsquare{
     background: linear-gradient(to left,lightblue,rgb(31, 31, 250));
     width: 60%;
-    top: 7%;
+    top: 10%;
     left: -1%;
     position: relative;
     border-bottom-left-radius: 10px;
@@ -72,4 +72,12 @@ body{
     font-size: 50px;
     box-shadow: 5px 5px 7px 5px rgba(0,0,0,0.5);
     background: transparent;
+}
+.spaceimg{
+    float: right;
+    position: absolute;
+    left: 70%;
+    top: 130%;
+    height: 200px;
+    width: 200px;
 }
