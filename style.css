@@ -35,8 +35,8 @@ body{
 .inputsquare{
     background: linear-gradient(to left,lightblue,rgb(31, 31, 250));
     width: 60%;
-    left: 20%;
-    top: 6%;
+    top: 7%;
+    left: -1%;
     position: relative;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
