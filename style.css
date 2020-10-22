@@ -33,7 +33,7 @@ body{
 }
 .inputsquare{
     background: linear-gradient(to left,lightblue,rgb(31, 31, 250));
-    width: 60%;
+    width: 50%;
     margin-top: 4.5px;
     margin-left: -1px;
     float: left;
@@ -73,7 +73,7 @@ body{
 }
 
 .spaceimg{
-    width: 39.99%;
+    width: 50%;
     float: left;
     background: linear-gradient(to left,rgb(31, 31, 250),lightblue);
     margin-top: 4px;
@@ -83,4 +83,9 @@ body{
     background-color: black;
     color: white;
     box-shadow: 7px 7px 9px 7px rgba(0,0,0,0.5);
+}
+.info{
+    border-top: 5px solid black;
+    background:linear-gradient(to left,rgb(31, 31, 250),lightblue,rgb(31, 31, 250));
+    height: 100%;
 }
