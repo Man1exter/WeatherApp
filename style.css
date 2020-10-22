@@ -111,3 +111,22 @@ body{
 .weatherinfo{
     margin-right: 150px;
 }
+.fa-sun{
+    color: yellow;
+    margin-left: 10%;
+    font-size: 60px;
+    transition: .5s linear;
+    animation: sizeMove 1.5s infinite;
+}
+.fa-sun:hover{
+    color: rgb(255, 187, 0);
+}
+@keyframes sizeMove {
+    0%{color: yellow;}
+    10%{color: tomato;}
+    20%{color: orangered;}
+    40%{color: orangered;}
+    60%{color: orange;}
+    80%{color: tomato;}
+    100%{color: yellow;}
+}
