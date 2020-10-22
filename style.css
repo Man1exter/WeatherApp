@@ -96,3 +96,11 @@ body{
     line-height: 60px;
     font-size: 45px;
 }
+.infolocation{
+    border: 5px solid blue;
+    display: flex;
+    justify-content: space-evenly;
+    height: 42%;
+    line-height: 250px;
+    font-size: 70px;
+}
