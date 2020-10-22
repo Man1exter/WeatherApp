@@ -24,7 +24,7 @@ const weatherSite = () => {
             const temper = res.data.main.temp;
             const actuallyStatus = Object.assign({}, ...res.data.weather);
 
-            temperatureText.textContent = Math.floor(temper) + '°C';
+            temperature.textContent = Math.floor(temper) + '°C';
             weather.textContent = actuallyStatus.main;
             nameOfCity.textContent = res.data.name;
         })
