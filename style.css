@@ -96,11 +96,18 @@ body{
     line-height: 60px;
     font-size: 45px;
 }
+.weather{
+    margin-right: 100px;
+}
 .infolocation{
     border: 5px solid blue;
     display: flex;
     justify-content: space-evenly;
     height: 42%;
     line-height: 250px;
-    font-size: 70px;
+    font-size: 100px;
+    color: yellow;
+}
+.weatherinfo{
+    margin-right: 150px;
 }
