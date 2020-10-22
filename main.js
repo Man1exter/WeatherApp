@@ -17,5 +17,16 @@ let urlLink;
 const weatherSite = () => {
     city = inputMain.value;
     urlLink = apiLink + city + apiKeyCode + units;
-}
+
+    axios.get(urlLink)
+        .then(res => {
+
+            const temper = res.data.main.temp;
+            const actuallyStatus = Object.assign({}, ...res.data.weather);
+
+            temperature.textContent = Math.floor(temper) + '°C';
+            infoWeather.textContent = actuallyStatus.main;
+            nameOfCity.textContent = res.data.name;
+        })
+};
 weatherSite();
