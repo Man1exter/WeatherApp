@@ -13,3 +13,9 @@ const units = '&units=metric';
 
 let city;
 let urlLink;
+
+const weatherSite = () => {
+    city = inputMain.value;
+    urlLink = apiLink + city + apiKeyCode + units;
+}
+weatherSite();
