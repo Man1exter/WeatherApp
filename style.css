@@ -46,7 +46,7 @@ body{
     border: none;
     background: transparent;
     width: 50%;
-    height: 50px;
+    height: 70px;
     font-size: 45px;
     border-bottom: 5px solid black;
     color: yellow;
@@ -64,7 +64,7 @@ body{
     cursor: pointer;
     text-align: center;
     margin-top: 10px;
-    margin-left: 20px;
+    margin-left: 40px;
     border-radius: 10px;
     font-size: 50px;
     box-shadow: 5px 5px 7px 5px rgba(0,0,0,0.5);
