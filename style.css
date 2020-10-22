@@ -85,7 +85,14 @@ body{
     box-shadow: 7px 7px 9px 7px rgba(0,0,0,0.5);
 }
 .info{
-    border-top: 5px solid black;
     background:linear-gradient(to left,rgb(31, 31, 250),lightblue,rgb(31, 31, 250));
     height: 100%;
+}
+.weathermain{
+    border: 5px solid blue;
+    display: flex;
+    justify-content: space-evenly;
+    height: 60px;
+    line-height: 60px;
+    font-size: 45px;
 }
