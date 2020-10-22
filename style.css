@@ -119,9 +119,7 @@ body{
     transition: .5s linear;
     animation: sizeMove 1.5s infinite;
 }
-.fa-sun:hover{
-    color: rgb(255, 187, 0);
-}
+
 @keyframes sizeMove {
     0%{color: yellow;}
     10%{color: tomato;}
