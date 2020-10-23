@@ -14,6 +14,7 @@ const units = '&units=metric';
 let city;
 let urlLink;
 
+
 const weatherSite = () => {
     city = (!inputMain.value) ? 'Kopalina' : inputMain.value
     urlLink = apiLink + city + apiKeyCode + units;
@@ -58,11 +59,13 @@ const weatherSite = () => {
             pOfWarning.textContent = '';
 };
 
+
 const enterAccept = (event) => {
     if(event.keyCode === 13){
         weatherSite();
     }
 }
+
 
 weatherSite();
 mainButton.addEventListener("click", weatherSite);
