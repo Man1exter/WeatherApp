@@ -24,12 +24,15 @@ const weatherSite = () => {
             const temper = res.data.main.temp;
             const actuallyStatus = Object.assign({}, ...res.data.weather);
 
+            pOfWarning.textContent = '';
+            inputMain.value = '';
+
+
             temperature.textContent = Math.floor(temper) + '°C';
             weather.textContent = actuallyStatus.main;
             nameOfCity.textContent = res.data.name;
 
-            pOfWarning.textContent = '';
-            inputMain.value = '';
+            
 
 
             if(actuallyStatus.id >= 200 && actuallyStatus.id < 300){
