@@ -29,28 +29,38 @@ const weatherSite = () => {
             nameOfCity.textContent = res.data.name;
 
             pOfWarning.textContent = '';
+            inputMain.value = '';
 
-            if(status.id >= 200 && status.id < 300){
-                photo.setAttribute('src','../thunderstorm.png');
-            } else if (status.id >= 300 && status.id < 400) {
-                photo.setAttribute('src','w/drizzle.png');
-            } else if (status.id >= 500 && status.id < 600){
-                photo.setAttribute('src','../rain.png');
-            } else if(status.id >= 600 && status.id < 700) {
-                photo.setAttribute('src','../ice.png');
-            } else if (status.id >= 700 && status.id < 800) {
-                photo.setAttribute('src','../fog.png');
+
+            if(actuallyStatus.id >= 200 && actuallyStatus.id < 300){
+                imgJpg.setAttribute('src','../thunderstorm.png');
+            } else if (status.id >= 300 && actuallyStatus.id < 400) {
+                imgJpg.setAttribute('src','../drizzle.png');
+            } else if (status.id >= 500 && actuallyStatus.id < 600){
+                imgJpg.setAttribute('src','../rain.png');
+            } else if(status.id >= 600 && actuallyStatus.id < 700) {
+                imgJpg.setAttribute('src','../ice.png');
+            } else if (status.id >= 700 && actuallyStatus.id < 800) {
+                imgJpg.setAttribute('src','../fog.png');
             }else if (status.id === 800){
-                photo.setAttribute('src','../sun.png');
-            } else if (status.id >= 800 && status.id < 900) {
-                photo.setAttribute('src','../cloud.png');
+                imgJpg.setAttribute('src','../sun.png');
+            } else if (status.id >= 800 && actuallyStatus.id < 900) {
+                imgJpg.setAttribute('src','../cloud.png');
             } else {
-                photo.setAttribute('src','../unknown.png');
+                imgJpg.setAttribute('src','../unknown.png');
             }
         })
-        .catch(() => {
-            pOfWarning.textContent = 'Undefined city'
-        });
+        .catch(() => 
+            pOfWarning.textContent = 'Undefined city');
+            pOfWarning.textContent = '';
 };
+
+const enterAccept = (event) => {
+    if(event.keyCode === 13){
+        weatherSite();
+    }
+}
+
 weatherSite();
-mainButton.addEventListener("click", weatherSite)
+mainButton.addEventListener("click", weatherSite);
+inputMain.addEventListener("keyup", enterAccept);
