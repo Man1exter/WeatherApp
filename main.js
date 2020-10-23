@@ -15,7 +15,7 @@ let city;
 let urlLink;
 
 const weatherSite = () => {
-    city = input.value;
+    city = (!inputMain.value) ? 'Kopalina' : inputMain.value
     urlLink = apiLink + city + apiKeyCode + units;
 
     axios.get(urlLink)
@@ -28,11 +28,12 @@ const weatherSite = () => {
             weather.textContent = actuallyStatus.main;
             nameOfCity.textContent = res.data.name;
 
+            pOfWarning.textContent = '';
 
             if(status.id >= 200 && status.id < 300){
                 photo.setAttribute('src','../thunderstorm.png');
             } else if (status.id >= 300 && status.id < 400) {
-                photo.setAttribute('src','../drizzle.png');
+                photo.setAttribute('src','w/drizzle.png');
             } else if (status.id >= 500 && status.id < 600){
                 photo.setAttribute('src','../rain.png');
             } else if(status.id >= 600 && status.id < 700) {
@@ -47,5 +48,9 @@ const weatherSite = () => {
                 photo.setAttribute('src','../unknown.png');
             }
         })
+        .catch(() => {
+            pOfWarning.textContent = 'Undefined city'
+        });
 };
 weatherSite();
+mainButton.addEventListener("click", weatherSite)
