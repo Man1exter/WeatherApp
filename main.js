@@ -70,3 +70,7 @@ const enterAccept = (event) => {
 weatherSite();
 mainButton.addEventListener("click", weatherSite);
 inputMain.addEventListener("keyup", enterAccept);
+
+
+
+////////////////////////////////////////////////////////////////
